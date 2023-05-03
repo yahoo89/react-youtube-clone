@@ -11,6 +11,10 @@ import {
   demoChannelTitle,
 } from '../utils/constants'
 
+const customStiles = {
+  minWidth: '100%',
+}
+
 const VideoCard = ({
   video: {
     id: { videoId },

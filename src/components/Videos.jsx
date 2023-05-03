@@ -18,7 +18,14 @@ const Videos = ({ videos, direction }) => {
       gap={2}
     >
       {newArr.map((item, idx) => (
-        <Box key={idx}>
+        <Box
+          key={idx}
+          sx={{
+            width: { xs: '100%', sm: '358px', md: '320px' },
+            boxShadow: 'none',
+            borderRadius: 0,
+          }}
+        >
           {item.id.videoId && <VideoCard video={item} />}
           {item.id.channelId && <ChannelCard channelDetail={item} />}
         </Box>
